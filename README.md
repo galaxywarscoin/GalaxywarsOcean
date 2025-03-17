@@ -116,9 +116,9 @@ cd galaxywarscoin
 
 Before start the wallet you should  `DARK.conf` at one of the following locations:
 
-- Linux - `~/.galaxywarscoin/DARK/DARK.conf`
-- Windows - `%APPDATA%\Galaxywars\DARK\DARK.conf`
-- MacOS - `~/Library/Application Support/Galaxywars/DARK/DARK.conf`
+- Linux - `~/.komodo/DARK/DARK.conf`
+- Windows - `%APPDATA%\Komodo\DARK\DARK.conf`
+- MacOS - `~/Library/Application Support/Komodo/DARK/DARK.conf`
 
 With the following content:
 
@@ -135,7 +135,7 @@ Bash one-liner for Linux to create `DARK.conf` with random RPC password:
 
 ```
 RANDPASS=$(tr -cd '[:alnum:]' < /dev/urandom | fold -w16 | head -n1) && \
-tee -a ~/.galaxywarscoin/DARK/DARK.conf << END
+tee -a ~/.komodo/DARK/DARK.conf << END
 txindex=1
 rpcuser=dark
 rpcpassword=${RANDPASS}
